@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" 
+    content="" 
+    />
+    <link
+      rel="shortcut icon"
+      href="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
+      type="image/svg+xml"
+    />
+    <title>Footer Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#65a190] text-[#31313B] h-0 my-[10vh] lg:mt-[50vh] md:mt-[20vh] mx-auto ">
+
+    <footer aria-label="Site Footer" class="w-[80%] mx-auto">
+        <!-- This container contains my form and ul links separately allowing me to flex-wrap when styling -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- removed beacuse layout looked weird: lg:col-span-3 -->
+             <section class=" md:col-span-2 col-span-1"> 
+                <h1 class="mb-7 text-[0.9em] md:text-[1.3em]">Subscribe to our newsletter for updates</h1>
+                <!-- form containing input and button -->
+                <form aria-label="Newsletter Subscription" class="flex flex-col md:flex-row gap-3">
+                    <label for="email" class="sr-only">Email Address</label>
+                    <input 
+                        class="text-[#A7ADB8] bg-[#FFFFFF] rounded py-[0.7em] pl-[1em] pr-[5em] border-none"
+                        id="email"
+                        type="email" 
+                        name="email" 
+                        placeholder="Email Address" 
+                        required 
+                        aria-required="true"
+                    >
+                    <button class="bg-[#d86943] text-[#FFFFFF] py-3 px-10 rounded hover:bg-[#BE765C]" type="submit">Subscribe</button>
+                </form>  
+            </section>
+            <!-- Links container containing my h2 and ul -->
+            <div class="col-span-1 lg:col-start-3 md:col-span-1 lg:ml-8">
+                <h2 class="mb-4 text-[0.7em] md:text-[1em]">Quick Links</h2>
+                <ul class="">
+                    <li class="mb-2 md:mb-4">
+                        <a href="#" target="_blank">Home</a>
+                    </li>
+                    <li class="mb-2 md:mb-4">
+                        <a href="#" target="_blank">Who Are We</a>
+                    </li>
+                    <li class="mb-2 md:mb-4">
+                        <a href="#" target="_blank">Our Philosophy</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-span-1 lg:col-start-4 md:col-span-1">
+                <h2 class="mb-4 text-[0.7em] md:text-[1em]">Technologies</h2>
+                <ul class="">
+                    <li class="mb-2 md:mb-4">
+                        <a href="#" target="_blank">HTML</a>
+                    </li>
+                    <li class="mb-2 md:mb-4">
+                        <a href="#" target="_blank">CSS</a>
+                    </li>
+                    <li class="mb-2 md:mb-4">
+                        <a href="#" target="_blank">JavaScript</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- border line in design but is ignored by screen readers -->
+        <hr class="my-6 h-2 border-[#d86943]" aria-hidden="true" />
+
+        <!-- div holds my image of codespace logo -->
+        <a href="#">
+            <img
+            class="w-[60%] md:w-[40%] lg:w-[25%]"
+            src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
+            alt="CodeSpace Logo">
+        </a>
+    </footer>  
+
+</body>
+</html>
+
