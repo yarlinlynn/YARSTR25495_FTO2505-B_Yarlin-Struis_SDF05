@@ -15,14 +15,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-[#65a190] text-[#31313B] h-0 my-[10vh] lg:mt-[50vh] md:mt-[20vh] mx-auto ">
+<!-- ADD THESE STYLES: display: flex; align-items: center; height: 100vh; -->
+<body class="bg-[#65a190] text-[#31313B] flex items-center lg:items-end h-screen text-base"> <!-- h-0 my-[10vh] lg:mt-[50vh] md:mt-[20vh] mx-auto -->
 
-    <footer aria-label="Site Footer" class="w-[80%] mx-auto">
+    <footer aria-label="Site Footer" class="w-[80%] mx-auto lg:mb-6">
         <!-- This container contains my form and ul links separately allowing me to flex-wrap when styling -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-baseline">
             <!-- removed beacuse layout looked weird: lg:col-span-3 -->
              <section class=" md:col-span-2 col-span-1"> 
-                <h1 class="mb-7 text-[0.9em] md:text-[1.3em]">Subscribe to our newsletter for updates</h1>
+                <h1 class="mb-5 ">Subscribe to our newsletter for updates</h1> <!-- figure out font-size: text-[0.9em] md:text-[1.3em] -->
                 <!-- form containing input and button -->
                 <form aria-label="Newsletter Subscription" class="flex flex-col md:flex-row gap-3">
                     <label for="email" class="sr-only">Email Address</label>
@@ -40,7 +41,7 @@
             </section>
             <!-- Links container containing my h2 and ul -->
             <div class="col-span-1 lg:col-start-3 md:col-span-1 lg:ml-8">
-                <h2 class="mb-4 text-[0.7em] md:text-[1em]">Quick Links</h2>
+                <h2 class="mb-4 ">Quick Links</h2> <!-- figure out font-size: text-[0.7em] md:text-[1em] -->
                 <ul class="">
                     <li class="mb-2 md:mb-4">
                         <a href="#" target="_blank">Home</a>
@@ -55,7 +56,7 @@
             </div>
 
             <div class="col-span-1 lg:col-start-4 md:col-span-1">
-                <h2 class="mb-4 text-[0.7em] md:text-[1em]">Technologies</h2>
+                <h2 class="mb-4">Technologies</h2> <!-- figure out font-size: text-[0.7em] md:text-[1em] -->
                 <ul class="">
                     <li class="mb-2 md:mb-4">
                         <a href="#" target="_blank">HTML</a>
