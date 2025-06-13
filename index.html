@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" 
-    content="" 
+    content="A responsive, accessible web project built as part of the CodeSpace SDF05 module. Showcasing modern HTML, Tailwind, and interactive design elements with a dark mode feature." 
     />
     <link
       rel="shortcut icon"
@@ -16,14 +16,16 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="text-[#31313B] bg-[#659f8f] dark:bg-[#313131] dark:text-white flex items-center lg:items-end h-screen text-base [font-size: clamp(2em, 5vw, 10em)]" > 
+<!-- Added the dark mode feature, making my project look great on light, dark and auto displays -->
+<body class="text-[#31313B] bg-[#659f8f] dark:bg-[#313131] dark:text-white flex items-center lg:items-end h-screen text-base text-[clamp(2em,5vw,10em)]" > 
 
     <footer aria-label="Site Footer" class="w-[85%] mx-auto lg:mb-6">
-        
+
+        <!-- Below code creates responsive design for mobile, tablet and desktop screen -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-5 md:gap-10 lg:gap-20 items-baseline">
             
              <section class=" md:col-span-2 col-span-1 "> 
-                <h1 class="mb-7 text-xl lg:text-2xl xl:text-3xl">Subscribe to our newsletter for updates</h1> 
+                <h1 class="mb-7 text-2xl lg:text-2xl xl:text-3xl">Subscribe to our newsletter for updates</h1> 
                 <!-- form containing input and button -->
                 <form aria-label="Newsletter Subscription" class="flex flex-col md:flex-row gap-3">
                     <label for="email" class="sr-only">Email Address</label>
@@ -42,7 +44,7 @@
             <!-- Links container containing my h2 and ul -->
             <div class="col-span-1 lg:col-start-3 md:col-span-1 lg:ml-8">
                 <h2 class="mb-4 text-xl lg:mb-7">Quick Links</h2> 
-                <ul class="">
+                <ul>
                     <li class="mb-2 md:mb-4 ">
                         <a class="hover:text-[#FFFFFF] dark:hover:text-[#d86943] focus:outline-none focus:border-b focus:border-[#d86943]" href="#" target="_blank">Home</a>
                     </li>
@@ -57,7 +59,7 @@
 
             <div class="col-span-1 lg:col-start-4 md:col-span-1">
                 <h2 class="mb-4 text-xl lg:mb-7">Technologies</h2> 
-                <ul class="">
+                <ul>
                     <li class="mb-2 md:mb-4">
                         <a class="hover:text-[#FFFFFF] dark:hover:text-[#d86943] focus:outline-none focus:border-b focus:border-[#d86943]" href="#" target="_blank">HTML</a>
                     </li>
@@ -70,10 +72,11 @@
                 </ul>
             </div>
         </div>
+        
         <!-- border line in design but is ignored by screen readers -->
         <hr class="my-6 h-2 border-[#d86943]" aria-hidden="true" />
 
-        <!-- div holds my image of codespace logo -->
+        <!-- image of codespace logo -->
         <a href="#">
             <img class="w-[60%] md:w-[40%] lg:w-[25%] focus:outline focus:outline-1 focus:outline-offset-1 focus:outline-[#FFFFFF]"
             src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
