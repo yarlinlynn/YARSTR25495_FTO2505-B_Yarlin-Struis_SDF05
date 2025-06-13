@@ -16,6 +16,7 @@ This project showcases a fully responsive, accessible **footer component** built
 - ✅ **Custom Colors** with brand-consistent palette
 - ✅ **Accessible Labels** using screen-reader-only (`sr-only`) classes
 - ✅ **Animated Hover Effects** on buttons
+- ✅ **Dark Mode Toggle** – Seamless switch between light and dark themes
 
 ## 📁 Project Structure
 ```
